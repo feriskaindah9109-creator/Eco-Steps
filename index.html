@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Eco Steps adalah website edukasi lingkungan tentang kebiasaan ramah lingkungan, pemilahan sampah, dan daur ulang.">
+  <title>Eco Steps | Langkah Kecil, Dampak Besar</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- NAVIGASI -->
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Navigasi utama">
+      <a class="brand" href="#beranda" aria-label="Eco Steps, beranda">
+        <span class="brand-mark" aria-hidden="true">♻</span>
+        <span class="brand-copy">
+          <strong>Eco Steps</strong>
+          <small>Langkah Kecil, Dampak Besar</small>
+        </span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle"
+        aria-label="Buka menu" aria-expanded="false">☰</button>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#beranda">Beranda</a>
+        <a href="#tentang">Tentang</a>
+        <a href="#cari">Cari Materi</a>
+        <a href="#aksi">Aksi Hijau</a>
+        <a href="#pilah">Pilah Sampah</a>
+        <a href="#daur-ulang">Daur Ulang</a>
+        <a href="#ceklist">Checklist</a>
+        <a href="#kuis">Kuis</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- BERANDA -->
+    <section class="hero section" id="beranda">
+      <div class="container hero-layout">
+
+        <div class="hero-copy">
+          <span class="eyebrow">🌿 MULAI DARI KEBIASAAN KECIL</span>
+
+          <h1>
+            Langkah kecil hari ini,
+            <br>
+            <span>dampak besar untuk bumi.</span>
+          </h1>
+
+          <p>
+            Eco Steps adalah ruang belajar sederhana untuk mengenal
+            kebiasaan ramah lingkungan. Mulai dari mengurangi sampah,
+            menghemat air dan energi, hingga memakai kembali barang
+            yang masih berguna.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button button-primary" href="#aksi">
+              Mulai Langkah Hijau →
+            </a>
+            <a class="button button-light" href="#tentang">
+              Kenali Eco Steps
+            </a>
+          </div>
+
+          <div class="hero-note">
+            <span aria-hidden="true">✓</span>
+            Mudah dipelajari • Bisa dimulai dari rumah dan sekolah
+          </div>
+        </div>
+
+        <!-- ILUSTRASI BUMI -->
+        <div class="hero-art" role="img"
+          aria-label="Ilustrasi bumi, daun, dan simbol daur ulang">
+          <div class="sun"></div>
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+          <div class="earth">🌎</div>
+          <div class="floating-leaf leaf-a">🌿</div>
+          <div class="floating-leaf leaf-b">🍃</div>
+          <div class="floating-icon recycle">♻️</div>
+          <div class="floating-icon water">💧</div>
+
+          <div class="art-caption">
+            <strong>Our planet, our responsibility.</strong>
+            <span>Rawat bumi lewat kebiasaan baik.</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PENCARIAN MATERI -->
+    <section class="section search-section" id="cari">
+      <div class="container">
+        <div class="search-panel panel">
+
+          <div>
+            <span class="eyebrow">CARI MATERI</span>
+            <h2>Temukan informasi <span>lingkungan</span></h2>
+            <p>
+              Gunakan fitur pencarian untuk menemukan informasi
+              tentang air, plastik, kardus, energi, sampah, dan
+              kebiasaan ramah lingkungan lainnya.
+            </p>
+          </div>
+
+          <div class="search-controls">
+            <label class="sr-only" for="searchInput">
+              Cari materi Eco Steps
+            </label>
+            <input id="searchInput" type="search"
+              placeholder="Contoh: sampah plastik..."
+              autocomplete="off">
+            <button class="button button-primary" id="searchButton">
+              Cari
+            </button>
+          </div>
+
+          <div id="searchResults" class="search-results"
+            aria-live="polite"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TENTANG ECO STEPS -->
+    <section class="section section-soft" id="tentang">
+      <div class="container">
+
+        <div class="section-heading">
+          <span class="eyebrow">TENTANG WEBSITE</span>
+          <h2>Kenali <span>Eco Steps</span></h2>
+          <p>
+            Perubahan yang baik tidak selalu harus dimulai dengan
+            hal besar. Kebiasaan sederhana yang dilakukan secara
+            konsisten dapat membantu menjaga kebersihan lingkungan,
+            mengurangi sampah, dan menghemat sumber daya alam.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <article class="info-card">
+            <div class="card-icon">🌱</div>
+            <h3>Belajar dengan mudah</h3>
+            <p>
+              Materi disajikan menggunakan bahasa yang sederhana
+              agar pengunjung dapat memahami isu lingkungan dan
+              mencoba langkah yang sesuai dengan kehidupan sehari-hari.
+            </p>
+          </article>
+
+          <article class="info-card">
+            <div class="card-icon">♻️</div>
+            <h3>Mengubah kebiasaan</h3>
+            <p>
+              Eco Steps mengajak pengguna mengurangi barang sekali
+              pakai, memilah sampah, memakai ulang barang, serta
+              mengenali pilihan yang lebih ramah lingkungan.
+            </p>
+          </article>
+
+          <article class="info-card">
+            <div class="card-icon">🤝</div>
+            <h3>Beraksi bersama</h3>
+            <p>
+              Menjaga bumi bukan tugas satu orang saja. Kebiasaan
+              baik akan lebih berdampak jika dilakukan bersama
+              keluarga, teman, dan warga sekolah.
+            </p>
+          </article>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- AKSI HIJAU -->
+    <section class="section" id="aksi">
+      <div class="container">
+
+        <div class="section-heading">
+          <span class="eyebrow">MULAI DARI DIRI SENDIRI</span>
+          <h2>Langkah sederhana untuk <span>bumi lebih baik</span></h2>
+          <p>
+            Pilih satu kebiasaan yang bisa dilakukan hari ini.
+            Tidak harus sempurna sekaligus. Hal terpenting adalah
+            memulai, membiasakan diri, dan melakukannya secara
+            berkelanjutan.
+          </p>
+        </div>
+
+        <div class="action-grid">
+          <article class="action-card">
+            <div class="card-icon">🚰</div>
+            <h3>Hemat air</h3>
+            <p>
+              Tutup keran saat menyabuni tangan atau menyikat gigi.
+              Gunakan air secukupnya dan laporkan kebocoran agar
+              air bersih tidak terbuang sia-sia.
+            </p>
+          </article>
+
+          <article class="action-card">
+            <div class="card-icon">💡</div>
+            <h3>Hemat energi</h3>
+            <p>
+              Matikan lampu dan perangkat elektronik saat tidak
+              digunakan. Manfaatkan cahaya alami pada siang hari
+              jika memungkinkan untuk mengurangi pemakaian listrik.
+            </p>
+          </article>
+
+          <article class="action-card">
+            <div class="card-icon">🛍️</div>
+            <h3>Kurangi plastik</h3>
+            <p>
+              Bawa botol minum, kotak makan, atau tas pakai ulang.
+              Menghindari barang sekali pakai yang tidak diperlukan
+              merupakan salah satu cara mengurangi timbunan sampah.
+            </p>
+          </article>
+
+          <article class="action-card">
+            <div class="card-icon">🌳</div>
+            <h3>Rawat tanaman</h3>
+            <p>
+              Jaga tanaman di sekitar rumah atau sekolah, siram
+              sesuai kebutuhan, dan jangan merusak ruang hijau
+              yang menjadi tempat hidup berbagai makhluk.
+            </p>
+          </article>
+
+          <article class="action-card">
+            <div class="card-icon">🚶</div>
+            <h3>Pilih perjalanan bijak</h3>
+            <p>
+              Untuk jarak dekat, berjalan kaki atau bersepeda jika
+              aman. Berbagi kendaraan atau menggunakan transportasi
+              umum juga dapat menjadi pilihan untuk mengurangi
+              penggunaan kendaraan pribadi.
+            </p>
+          </article>
+
+          <article class="action-card">
+            <div class="card-icon">🧺</div>
+            <h3>Pakai ulang barang</h3>
+            <p>
+              Periksa apakah barang masih dapat diperbaiki, dipakai
+              kembali, atau diberikan kepada orang lain sebelum
+              membuangnya. Kebiasaan ini dapat memperpanjang masa
+              guna barang dan mengurangi sampah.
+            </p>
+          </article>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PEMILAHAN SAMPAH -->
+    <section class="section section-soft" id="pilah">
+      <div class="container">
+
+        <div class="section-heading">
+          <span class="eyebrow">KENALI JENIS SAMPAH</span>
+          <h2>Yuk, belajar <span>memilah sampah</span></h2>
+          <p>
+            Pemilahan membantu sampah ditangani dengan cara yang
+            tepat. Kenali jenis sampah sebelum membuangnya.
+            Aturan dan warna tempat sampah dapat berbeda di setiap
+            daerah, jadi perhatikan petunjuk fasilitas setempat.
+          </p>
+        </div>
+
+        <div class="sort-grid">
+
+          <article class="sort-card organic">
+            <div class="sort-emoji">🍂</div>
+            <h3>Sampah organik</h3>
+            <p>
+              Berasal dari bahan alami, seperti sisa buah,
+              sayuran, dan daun. Jika fasilitasnya tersedia,
+              bahan organik tertentu dapat diolah menjadi kompos.
+            </p>
+            <span class="sort-tag">Contoh: kulit pisang</span>
+          </article>
+
+          <article class="sort-card recyclable">
+            <div class="sort-emoji">📦</div>
+            <h3>Sampah yang dapat didaur ulang</h3>
+            <p>
+              Kertas, kardus, botol plastik, atau kaleng tertentu
+              dapat didaur ulang jika bersih, kering, dan diterima
+              oleh fasilitas pengelola.
+            </p>
+            <span class="sort-tag">Contoh: kardus bersih</span>
+          </article>
+
+          <article class="sort-card residual">
+            <div class="sort-emoji">🧻</div>
+            <h3>Sampah residu</h3>
+            <p>
+              Merupakan sampah yang sulit didaur ulang melalui
+              fasilitas biasa, seperti tisu kotor atau kemasan
+              tertentu. Ikuti petunjuk pembuangan di daerahmu.
+            </p>
+            <span class="sort-tag">Contoh: tisu bekas</span>
+          </article>
+
+          <article class="sort-card hazardous">
+            <div class="sort-emoji">🔋</div>
+            <h3>Sampah khusus atau berbahaya</h3>
+            <p>
+              Baterai, lampu tertentu, dan limbah elektronik perlu
+              ditangani secara terpisah. Jangan mencampurkannya
+              dengan sampah rumah tangga biasa.
+            </p>
+            <span class="sort-tag">Contoh: baterai bekas</span>
+          </article>
+
+        </div>
+
+        <!-- AKTIVITAS PEMILAHAN INTERAKTIF -->
+        <div class="interactive-sort panel">
+          <div>
+            <span class="eyebrow">AKTIVITAS INTERAKTIF</span>
+            <h3>Masukkan sampah ke kategori yang tepat</h3>
+            <p>
+              Perhatikan benda yang ditampilkan, kemudian pilih
+              kategori yang menurutmu paling sesuai. Setelah
+              menjawab, kamu akan mendapat umpan balik dan
+              penjelasan singkat.
+            </p>
+          </div>
+
+          <div class="sort-game">
+            <div class="waste-question">
+              <span class="question-label">BENDA SAAT INI</span>
+              <div id="wasteEmoji" class="waste-emoji">🍌</div>
+              <strong id="wasteName">Kulit pisang</strong>
+              <p id="wasteCounter">Benda 1 dari 6</p>
+            </div>
+
+            <div class="sort-options" id="sortOptions">
+              <button class="sort-option" data-category="organik">
+                🍂 Organik
+              </button>
+              <button class="sort-option" data-category="daurulang">
+                📦 Dapat didaur ulang
+              </button>
+              <button class="sort-option" data-category="residu">
+                🧻 Residu
+              </button>
+              <button class="sort-option" data-category="khusus">
+                🔋 Khusus/berbahaya
+              </button>
+            </div>
+
+            <p id="sortFeedback" class="feedback" aria-live="polite">
+              Pilih salah satu kategori untuk menjawab.
+            </p>
+
+            <button class="button button-primary" id="nextWaste" disabled>
+              Benda berikutnya →
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PANDUAN DAUR ULANG -->
+    <section class="section" id="daur-ulang">
+      <div class="container">
+
+        <div class="section-heading">
+          <span class="eyebrow">KREATIF DAN BERTANGGUNG JAWAB</span>
+          <h2>Panduan <span>daur ulang dan pakai ulang</span></h2>
+          <p>
+            Sebelum membuat barang baru dari barang bekas, pastikan
+            bahan dalam keadaan bersih dan aman. Tidak semua benda
+            cocok untuk didaur ulang di rumah. Pilih cara pakai
+            ulang yang sederhana dan sesuai kebutuhan.
+          </p>
+        </div>
+
+        <div class="recycle-grid">
+
+          <article class="recycle-card">
+            <div class="card-icon">📦</div>
+            <h3>Kardus bekas</h3>
+            <p>
+              Kardus yang masih kokoh dapat dimanfaatkan untuk
+              menyimpan alat tulis, kabel, atau barang kecil agar
+              lebih tertata dan tidak mudah tercecer.
+            </p>
+            <button class="button button-outline recycle-btn"
+              data-guide="kardus">Lihat panduan →</button>
+          </article>
+
+          <article class="recycle-card">
+            <div class="card-icon">🧴</div>
+            <h3>Botol plastik</h3>
+            <p>
+              Botol yang sudah kosong dan dicuci dapat digunakan
+              kembali untuk kerajinan atau pot tanaman. Minta
+              bantuan orang dewasa saat menggunakan alat pemotong.
+            </p>
+            <button class="button button-outline recycle-btn"
+              data-guide="botol">Lihat panduan →</button>
+          </article>
+
+          <article class="recycle-card">
+            <div class="card-icon">📄</div>
+            <h3>Kertas bekas</h3>
+            <p>
+              Gunakan sisi yang masih kosong untuk latihan,
+              daftar tugas, atau catatan kecil. Kertas bersih
+              juga bisa dikumpulkan untuk didaur ulang.
+            </p>
+            <button class="button button-outline recycle-btn"
+              data-guide="kertas">Lihat panduan →</button>
+          </article>
+
+          <article class="recycle-card">
+            <div class="card-icon">🥫</div>
+            <h3>Kaleng bekas</h3>
+            <p>
+              Kaleng bersih dapat menjadi tempat alat tulis jika
+              tepinya aman. Hindari kaleng tajam atau berkarat
+              dan mintalah bantuan orang dewasa bila diperlukan.
+            </p>
+            <button class="button button-outline recycle-btn"
+              data-guide="kaleng">Lihat panduan →</button>
+          </article>
+
+        </div>
+
+        <div class="guide-detail panel" id="guideDetail"
+          hidden aria-live="polite">
+
+          <div class="guide-detail-top">
+            <div>
+              <span class="eyebrow">PANDUAN LANGKAH DEMI LANGKAH</span>
+              <h3 id="guideTitle">Judul panduan</h3>
+            </div>
+            <button class="close-button" id="closeGuide"
+              aria-label="Tutup panduan">×</button>
+          </div>
+
+          <p id="guideDescription"></p>
+          <ol id="guideSteps"></ol>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CHECKLIST KEBIASAAN HIJAU -->
+    <section class="section section-soft" id="ceklist">
+      <div class="container checklist-layout">
+
+        <div>
+          <span class="eyebrow">TANTANGAN HARIAN</span>
+          <h2>Checklist <span>kebiasaan hijau</span></h2>
+          <p>
+            Tandai kebiasaan yang sudah kamu lakukan hari ini.
+            Perhatikan perkembanganmu dan jadikan kebiasaan baik
+            sebagai bagian dari kehidupan sehari-hari.
+          </p>
+
+          <div class="progress-wrap">
+            <div class="progress-label">
+              <span>Progres hari ini</span>
+              <strong id="progressText">0 dari 5</strong>
+            </div>
+            <div class="progress-track">
+              <div class="progress-bar" id="progressBar"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="checklist panel" id="habitChecklist">
+
+          <label class="check-item">
+            <input type="checkbox">
+            <span class="check-symbol">💧</span>
+            <span>
+              <strong>Menghemat air</strong>
+              <small>Menutup keran saat tidak diperlukan.</small>
+            </span>
+          </label>
+
+          <label class="check-item">
+            <input type="checkbox">
+            <span class="check-symbol">💡</span>
+            <span>
+              <strong>Mematikan lampu</strong>
+              <small>Mematikan lampu atau perangkat yang tidak dipakai.</small>
+            </span>
+          </label>
+
+          <label class="check-item">
+            <input type="checkbox">
+            <span class="check-symbol">🛍️</span>
+            <span>
+              <strong>Mengurangi plastik</strong>
+              <small>Menggunakan tas atau botol pakai ulang.</small>
+            </span>
+          </label>
+
+          <label class="check-item">
+            <input type="checkbox">
+            <span class="check-symbol">🗑️</span>
+            <span>
+              <strong>Memilah sampah</strong>
+              <small>Memisahkan sampah sesuai jenisnya.</small>
+            </span>
+          </label>
+
+          <label class="check-item">
+            <input type="checkbox">
+            <span class="check-symbol">🌱</span>
+            <span>
+              <strong>Merawat lingkungan</strong>
+              <small>Menjaga tanaman atau area sekitar tetap bersih.</small>
+            </span>
+          </label>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- KUIS EVALUASI 10 SOAL -->
+    <section class="section" id="kuis">
+      <div class="container quiz-container">
+
+        <div class="section-heading">
+          <span class="eyebrow">UJI PEMAHAMANMU</span>
+          <h2>Kuis <span>Eco Steps</span></h2>
+          <p>
+            Jawab 10 pertanyaan singkat tentang kebiasaan ramah
+            lingkungan dan pengelolaan sampah. Pilih satu jawaban
+            untuk setiap pertanyaan dan lihat hasil evaluasimu
+            setelah semua soal selesai.
+          </p>
+        </div>
+
+        <div class="quiz-panel panel">
+          <div class="quiz-top">
+            <span id="quizProgress">Soal 1 dari 10</span>
+            <span id="quizScoreLive">Jawaban benar: 0</span>
+          </div>
+
+          <div class="quiz-progress">
+            <div id="quizProgressBar"></div>
+          </div>
+
+          <h3 id="quizQuestion">Pertanyaan akan muncul di sini.</h3>
+
+          <div id="quizAnswers" class="quiz-answers"></div>
+
+          <p id="quizFeedback" class="feedback" aria-live="polite">
+            Pilih jawaban yang paling tepat.
+          </p>
+
+          <div class="quiz-controls">
+            <button class="button button-primary" id="quizNext" disabled>
+              Soal berikutnya →
+            </button>
+            <button class="button button-light" id="quizRestart" hidden>
+              Ulangi kuis ↻
+            </button>
+          </div>
+
+          <div id="quizResult" class="quiz-result" hidden></div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PESAN PENUTUP -->
+    <section class="section tips-section">
+      <div class="container tips-banner">
+
+        <div class="tips-emoji">🌍</div>
+
+        <div>
+          <span class="eyebrow">INGAT PESAN INI</span>
+          <h2>
+            Bumi tidak membutuhkan satu orang yang sempurna,
+            tetapi banyak orang yang mau peduli.
+          </h2>
+          <p>
+            Mulai dari satu langkah kecil, lakukan secara konsisten,
+            lalu ajak orang di sekitarmu. Kebiasaan baik dapat
+            menjadi awal perubahan yang lebih besar bagi lingkungan.
+          </p>
+        </div>
+
+        <a href="#beranda" class="button button-light">
+          Kembali ke atas ↑
+        </a>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+ <footer class="site-footer">
+    <div class="container footer-layout">
+
+      <a class="brand footer-brand" href="#beranda">
+        <span class="brand-mark">♻</span>
+        <span class="brand-copy">
+          <strong>Eco Steps</strong>
+          <small>Langkah Kecil, Dampak Besar</small>
+        </span>
+      </a>
+
+      <p>
+        Website edukasi lingkungan untuk membantu membangun
+        kebiasaan yang lebih peduli terhadap bumi.
+      </p>
+
+      <small>
+        © <span id="currentYear"></span> Eco Steps • Belajar, mulai, dan bertindak.
+      </small>
+
+    </div>
+  </footer>
+  
+</body>
+</html>
